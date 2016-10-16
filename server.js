@@ -31,7 +31,7 @@ var p = rethinkDb.connect({
 });
 p.then(function (conn) {
     exports.rethinkDbConnection = () => conn;
-    console.log('RethinkDB connected on' + conn.host + ':' + conn.port);
+    console.log('RethinkDB connected on ' + conn.host + ':' + conn.port);
 }).error(function (error) {
     console.log(error);
 });

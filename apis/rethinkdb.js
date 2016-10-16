@@ -13,6 +13,7 @@ module.exports = function (app, url) {
         r.table('orders').get(req.params.id).
             run(getConn(), function (err, result) {
                 if (err) return utils.sendError(res, err, 500);
+                console.log('get id OK');
                 res.json(result);
             });
     })
@@ -22,6 +23,7 @@ module.exports = function (app, url) {
             if (err) throw err;
             cursor.toArray(function (err, result) {
                 if (err) return utils.sendError(res, err, 500);
+                console.log('get OK');
                 res.json(result);
             });
         });
@@ -36,6 +38,7 @@ module.exports = function (app, url) {
             amount: req.body.amount
         }).run(getConn(), function (err, result) {
             if (err) return utils.sendError(res, err, 500);
+            console.log('post OK');
             res.json(result);
         })
     })
@@ -44,6 +47,7 @@ module.exports = function (app, url) {
         r.table('orders').get(req.params.id).
             delete().run(getConn(), function (err, result) {
                 if (err) return utils.sendError(res, err, 500);
+                console.log('delete OK');
                 res.json(result);
             });
     })
@@ -57,6 +61,7 @@ module.exports = function (app, url) {
                 amount: req.body.amount
             }).run(getConn(), function (err, result) {
                 if (err) return utils.sendError(res, err, 500);
+                console.log('patch OK');
                 res.json(result);
             });
     })
