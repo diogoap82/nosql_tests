@@ -14,7 +14,7 @@ var port = process.env.PORT || 3000;
 //var env = process.env.NODE_ENV || 'development';
 //app.locals.ENV = env;
 //app.locals.ENV_DEVELOPMENT = env == 'development';
-var azureHost = '13.90.45.29';
+var azureHost = '13.92.188.193';
 
 // APIs requests ===============================================================
 require('./apis/rethinkdb.js')(app, url);
@@ -25,7 +25,7 @@ console.log('App listening on port ' + port);
 
 console.log('Connecting to RethinkDB...');
 var p = rethinkDb.connect({
-    host: '13.90.45.29',
+    host: azureHost,
     port: 28015,
     db: 'Demo'
 });
