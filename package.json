@@ -9,7 +9,8 @@
   "dependencies": {
     "express": "^4.13.3",
     "body-parser": "^1.13.3",
-    "rethinkdb": "^2.3.3"
+    "rethinkdb": "^2.3.3",
+    "couchbase": "^2.2.3"
   },
   "devDependencies": {
     "grunt": "^1.0.1",
