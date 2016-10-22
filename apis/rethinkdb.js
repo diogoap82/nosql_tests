@@ -4,7 +4,7 @@ var r = require('rethinkdb');
 var utils = require('../services/utilsService');
 
 var getConn = function () {
-    return require('../server.js').rethinkDbConnection();
+    return require('../server.js').RethinkDbConnection();
 }
 
 module.exports = function (app, url) {
