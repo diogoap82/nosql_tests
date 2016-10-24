@@ -52,6 +52,18 @@ module.exports = function (app, url) {
             });
     })
 
+    app.delete('/api/rethinkdb/', function (req, res) {
+        r.tableDrop('orders').run(getConn(), function (err, result) {
+            if (err) return utils.sendError(res, err, 500);
+
+            r.db('Demo').tableCreate('orders').run(getConn(), function (err, result) {
+                if (err) return utils.sendError(res, err, 500);
+                console.log('delete all OK');
+                res.json(result);
+            });
+        });
+    })
+
     app.patch('/api/rethinkdb/:id', function (req, res) {
         r.table('orders').get(req.params.id).
             update({

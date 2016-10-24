@@ -56,6 +56,24 @@ module.exports = function (app, url) {
         });
     })
 
+    app.delete('/api/couchbase/', function (req, res) {
+        var N1qlQuery = getConn().N1qlQuery;
+        var query = N1qlQuery.fromString('select * from default');
+
+        getBucket().query(query, function (err, results) {
+            if (err) return utils.sendError(res, err, 500);
+
+            results.forEach(function (item) {
+                getBucket().remove(item.default.id, function (error, result) {
+                    if (error) return utils.sendError(res, err, 500);
+                });
+            });
+
+            console.log('delete all OK');
+            res.json('OK');
+        });
+    })
+
     app.patch('/api/couchbase/:id', function (req, res) {
         var data = {
             id: req.params.id,

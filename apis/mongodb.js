@@ -47,6 +47,14 @@ module.exports = function (app, url) {
         });
     })
 
+    app.delete('/api/mongodb', function (req, res) {
+        getConn().collection('orders').remove({}, function (err, result) {
+            if (err) return utils.sendError(res, err, 500);
+            console.log('delete all OK');
+            res.json(result);
+        });
+    })    
+
     app.patch('/api/mongodb/:id', function (req, res) {
         getConn().collection('orders').findOneAndUpdate({ id: req.params.id },
             {
