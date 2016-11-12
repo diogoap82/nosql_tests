@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 
 // Configuring variables =======================================================
 var port = process.env.PORT || 3000;
-var azureHost = '40.121.94.115';
+var host = process.env.HOST || '104.199.127.213';
 
 // APIs requests ===============================================================
 require('./apis/rethinkdb.js')(app, url);
@@ -25,7 +25,7 @@ console.log('App listening on port ' + port);
 console.log('Connecting to RethinkDB...');
 var rethinkDb = require('rethinkdb');
 var p = rethinkDb.connect({
-    host: azureHost,
+    host: host,
     port: 28015,
     db: 'Demo'
 });
@@ -39,7 +39,7 @@ p.then(function (conn) {
 // CouchBase connection ========================================================
 console.log('Connecting to CouchBase...');
 var couchBase = require('couchbase');
-var cluster = new couchBase.Cluster('couchbase://' + azureHost + '/');
+var cluster = new couchBase.Cluster('couchbase://' + host + '/');
 var bucket = cluster.openBucket('default');
 exports.CouchBaseConnection = () => couchBase;
 exports.CouchBaseBucket = () => bucket;
@@ -48,7 +48,7 @@ console.log('CouchBase connected!');
 // MongoDB connection ==========================================================
 console.log('Connecting to MongoDB...');
 var mongoClient = require('mongodb').MongoClient;
-var url = 'mongodb://' + azureHost + ':27017/demo';
+var url = 'mongodb://' + host + ':27017/demo';
 mongoClient.connect(url, function (err, db) {
     if (err) {
         console.log('MongoDB connection error: ' + err);
