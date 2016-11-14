@@ -34,6 +34,13 @@ forever stop server.js
 echo "Starting node server.js with forever..."
 forever start server.js
 
+echo "Deleting all records at Couchbase..."
+curl -X DELETE "http://localhost:3000/api/couchbase/" 
+echo "Deleting all records at MongoDB..."
+curl -X DELETE "http://localhost:3000/api/mongodb/"
+echo "Deleting all records at RethinkDB..."
+curl -X DELETE "http://localhost:3000/api/rethinkdb/"
+
 echo "Starting to run the tests..."
 dest_dir="/home/diogoap82/api/nosql_tests/tests/"
 
