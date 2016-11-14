@@ -88,6 +88,7 @@ rm $dest_dir$test_result
 echo "DELETE tests fineshed!"
 
 echo "Pushing new reports to git..."
+git config --global push.default simple
 git add .
 git commit -m "Auto commit - Test results update"
 git push
