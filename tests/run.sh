@@ -2,6 +2,10 @@
 
 echo "Starting process..."
 
+echo "Git pull..."
+cd /home/diogoap82/api/nosql_tests/
+git pull
+
 echo "Stoping MongoDB database process..."
 sudo service mongod stop
 echo "Stoping RethinkDB database process..."
