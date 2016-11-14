@@ -2,9 +2,10 @@
 
 echo "Starting process..."
 
-echo "Git pull..."
 cd /home/diogoap82/api/nosql_tests/
-git clean -f
+echo "Git checkout..."
+git checkout .
+echo "Git pull..."
 git pull
 
 echo "Stoping MongoDB database process..."
@@ -86,6 +87,11 @@ rm $dest_dir$test_result
 /home/diogoap82/apache-jmeter-3.0/bin/./jmeter -n -t $dest_dir$test_file -l $dest_dir$test_result
 echo "DELETE tests fineshed!"
 
+echo "Pushing new reports to git..."
+git add .
+git commit -m "Auto commit - Test results update"
+git push
+echo "Pushing done..."
 
 echo
 echo "Done! Exiting..."
