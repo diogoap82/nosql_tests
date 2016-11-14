@@ -1,8 +1,34 @@
 #!/bin/bash
-echo "Starting to run the tests..."
 
-#Changing directory
-cd /
+echo "Starting process..."
+
+echo "Stoping MongoDB database process..."
+sudo service mongod stop
+echo "Stoping RethinkDB database process..."
+sudo service rethinkdb stop
+echo "Stoping Couchbase database process..."
+sudo service couchbase-server stop
+
+echo "Starting MongoDB database process..."
+sudo service mongod start
+echo "Starting RethinkDB database process..."
+sudo service rethinkdb start
+echo "Starting Couchbase database process..."
+sudo service couchbase-server start
+
+echo "Waiting for all databases initialization..."
+sleep 5
+
+echo "Configuring node.js"
+export HOST="localhost"
+
+echo "Stoping node server.js with forever..."
+cd /home/diogoap82/api/nosql_tests/
+forever stop server.js
+echo "Starting node server.js with forever..."
+forever start server.js
+
+echo "Starting to run the tests..."
 dest_dir="/home/diogoap82/api/nosql_tests/tests/"
 
 
