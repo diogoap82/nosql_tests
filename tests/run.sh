@@ -34,6 +34,9 @@ forever stop server.js
 echo "Starting node server.js with forever..."
 forever start server.js
 
+echo "Waiting for API initialization..."
+sleep 5
+
 echo "Deleting all records at Couchbase..."
 curl -X DELETE "http://localhost:3000/api/couchbase/" 
 echo "Deleting all records at MongoDB..."
