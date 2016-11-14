@@ -4,6 +4,7 @@ echo "Starting process..."
 
 echo "Git pull..."
 cd /home/diogoap82/api/nosql_tests/
+git clean -f
 git pull
 
 echo "Stoping MongoDB database process..."
