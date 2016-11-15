@@ -3,3 +3,5 @@ public/components
 .sass-cache
 jmeter.log
 .hprof
+.vscode
+.editorconfig
