@@ -23,7 +23,7 @@ module.exports = function (app, url) {
 
     app.get('/api/couchbase', function (req, res) {
         var N1qlQuery = getConn().N1qlQuery;
-        var query = N1qlQuery.fromString('select * from default');
+        var query = N1qlQuery.fromString('select * from default limit 2');
 
         getBucket().query(query, function (err, result) {
             if (err) return utils.sendError(res, err, 500);

@@ -18,7 +18,7 @@ module.exports = function (app, url) {
     })
 
     app.get('/api/mongodb', function (req, res) {
-        getConn().collection('orders').find({}).toArray(function (err, result) {
+        getConn().collection('orders').find({}).limit(2).toArray(function (err, result) {
             if (err) return utils.sendError(res, err, 500);
             console.log('get OK');
             res.json(result);
