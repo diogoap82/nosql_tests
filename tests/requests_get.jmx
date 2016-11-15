@@ -401,7 +401,7 @@
           </elementProp>
           <elementProp name="thread_number_users" elementType="Argument">
             <stringProp name="Argument.name">thread_number_users</stringProp>
-            <stringProp name="Argument.value">1</stringProp>
+            <stringProp name="Argument.value">1000</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="thread_rampup" elementType="Argument">
@@ -411,7 +411,7 @@
           </elementProp>
           <elementProp name="thread_count" elementType="Argument">
             <stringProp name="Argument.name">thread_count</stringProp>
-            <stringProp name="Argument.value">100</stringProp>
+            <stringProp name="Argument.value">10</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>

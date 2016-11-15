@@ -226,7 +226,7 @@
             <idleTime>true</idleTime>
           </value>
         </objProp>
-        <stringProp name="filename"></stringProp>
+        <stringProp name="filename">C:\Users\Diogo\OneDrive\UFRGS\Sistemas de Tempo Real\Article\API\db_api\tests\results_get.jtl</stringProp>
       </ResultCollector>
       <hashTree/>
       <ResultCollector guiclass="GraphVisualizer" testclass="ResultCollector" testname="Graph Results" enabled="true">
@@ -337,7 +337,7 @@
             <idleTime>true</idleTime>
           </value>
         </objProp>
-        <stringProp name="filename"></stringProp>
+        <stringProp name="filename">C:\Users\Diogo\OneDrive\UFRGS\Sistemas de Tempo Real\Article\API\db_api\tests\results_get.jtl</stringProp>
       </ResultCollector>
       <hashTree/>
       <ResultCollector guiclass="TableVisualizer" testclass="ResultCollector" testname="View Results in Table" enabled="true">
@@ -405,7 +405,7 @@
             <idleTime>true</idleTime>
           </value>
         </objProp>
-        <stringProp name="filename"></stringProp>
+        <stringProp name="filename">C:\Users\Diogo\OneDrive\UFRGS\Sistemas de Tempo Real\Article\API\db_api\tests\results_get.jtl</stringProp>
       </ResultCollector>
       <hashTree/>
       <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
@@ -426,17 +426,17 @@
           </elementProp>
           <elementProp name="thread_number_users" elementType="Argument">
             <stringProp name="Argument.name">thread_number_users</stringProp>
-            <stringProp name="Argument.value">1</stringProp>
+            <stringProp name="Argument.value">1000</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="thread_rampup" elementType="Argument">
             <stringProp name="Argument.name">thread_rampup</stringProp>
-            <stringProp name="Argument.value">1000</stringProp>
+            <stringProp name="Argument.value">1</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="thread_count" elementType="Argument">
             <stringProp name="Argument.name">thread_count</stringProp>
-            <stringProp name="Argument.value">100</stringProp>
+            <stringProp name="Argument.value">10</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>
