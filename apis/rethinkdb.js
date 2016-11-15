@@ -19,7 +19,7 @@ module.exports = function (app, url) {
     })
 
     app.get('/api/rethinkdb', function (req, res) {
-        r.table('orders').limit(2).run(getConn(), function (err, cursor) {
+        r.table('orders').limit(100).run(getConn(), function (err, cursor) {
             if (err) throw err;
             cursor.toArray(function (err, result) {
                 if (err) return utils.sendError(res, err, 500);
