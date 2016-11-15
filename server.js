@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 
 // Configuring variables =======================================================
 var port = process.env.PORT || 3000;
-var host = process.env.HOST || '104.198.14.47';
+var host = process.env.HOST || '104.199.119.148';
 
 // APIs requests ===============================================================
 require('./apis/rethinkdb.js')(app, url);
