@@ -174,7 +174,7 @@
             <idleTime>true</idleTime>
           </value>
         </objProp>
-        <stringProp name="filename">C:\Users\Diogo\OneDrive\UFRGS\Sistemas de Tempo Real\Article\API\db_api\tests\results_post.jtl</stringProp>
+        <stringProp name="filename"></stringProp>
       </ResultCollector>
       <hashTree/>
       <ResultCollector guiclass="StatGraphVisualizer" testclass="ResultCollector" testname="Aggregate Graph" enabled="true">
@@ -208,7 +208,7 @@
             <idleTime>true</idleTime>
           </value>
         </objProp>
-        <stringProp name="filename">C:\Users\Diogo\OneDrive\UFRGS\Sistemas de Tempo Real\Article\API\db_api\tests\results_post.jtl</stringProp>
+        <stringProp name="filename"></stringProp>
       </ResultCollector>
       <hashTree/>
       <ResultCollector guiclass="GraphVisualizer" testclass="ResultCollector" testname="Graph Results" enabled="true">
@@ -242,7 +242,7 @@
             <idleTime>true</idleTime>
           </value>
         </objProp>
-        <stringProp name="filename">C:\Users\Diogo\OneDrive\UFRGS\Sistemas de Tempo Real\Article\API\db_api\tests\results_post.jtl</stringProp>
+        <stringProp name="filename"></stringProp>
         <boolProp name="ResultCollector.success_only_logging">true</boolProp>
       </ResultCollector>
       <hashTree/>
@@ -277,7 +277,7 @@
             <idleTime>true</idleTime>
           </value>
         </objProp>
-        <stringProp name="filename">C:\Users\Diogo\OneDrive\UFRGS\Sistemas de Tempo Real\Article\API\db_api\tests\results_post.jtl</stringProp>
+        <stringProp name="filename"></stringProp>
       </ResultCollector>
       <hashTree/>
       <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
@@ -311,7 +311,7 @@
             <idleTime>true</idleTime>
           </value>
         </objProp>
-        <stringProp name="filename">C:\Users\Diogo\OneDrive\UFRGS\Sistemas de Tempo Real\Article\API\db_api\tests\results_post.jtl</stringProp>
+        <stringProp name="filename"></stringProp>
       </ResultCollector>
       <hashTree/>
       <ResultCollector guiclass="TableVisualizer" testclass="ResultCollector" testname="View Results in Table" enabled="true">
@@ -345,7 +345,7 @@
             <idleTime>true</idleTime>
           </value>
         </objProp>
-        <stringProp name="filename">C:\Users\Diogo\Downloads\results_post.jtl</stringProp>
+        <stringProp name="filename"></stringProp>
       </ResultCollector>
       <hashTree/>
       <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
@@ -379,7 +379,7 @@
             <idleTime>true</idleTime>
           </value>
         </objProp>
-        <stringProp name="filename">C:\Users\Diogo\OneDrive\UFRGS\Sistemas de Tempo Real\Article\API\db_api\tests\results_post.jtl</stringProp>
+        <stringProp name="filename"></stringProp>
       </ResultCollector>
       <hashTree/>
       <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
