@@ -11,7 +11,7 @@
     "body-parser": "^1.13.3",
     "rethinkdb": "^2.3.3",
     "couchbase": "^2.2.3",
-    "mongodb": "^2.2.11"
+    "mongodb": "^3.6.1"
   },
   "devDependencies": {
     "grunt": "^1.0.1",
